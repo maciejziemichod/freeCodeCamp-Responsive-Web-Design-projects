@@ -1,3 +1,13 @@
+/* variables */
+
+:root {
+  --blue: #78d6fa;
+  --light-green: #0fcf7f;
+  --dark-green: #11aa79;
+  --yellow: #fffa04;
+  --orange: #ffc50b;
+}
+
 /* global settings */
 
 *,
