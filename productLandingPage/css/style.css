@@ -19,6 +19,7 @@
 }
 
 body {
+  font-family: "Roboto Mono", monospace;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -32,4 +33,61 @@ select {
   font: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 /* header  */
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blue);
+  height: 5rem;
+  width: 100%;
+}
+
+#logo-container {
+  height: 100%;
+  width: 5rem;
+}
+
+#logo-container img {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+}
+
+#nav-bar {
+  align-self: center;
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40vw;
+  font-size: 2rem;
+}
+
+#nav-bar li {
+  flex: 1 auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  border-bottom: black 3px solid;
+}
+
+#content {
+  margin-top: 5rem;
+  background-color: var(--light-green);
+  height: 85vh;
+}
