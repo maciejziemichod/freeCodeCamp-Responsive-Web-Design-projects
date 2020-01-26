@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
     <header id="header">
       <!-- for codepen src: https://raw.githubusercontent.com/waterflowMZ/Product-Landing-Page/master/productLandingPage/img/logo.png -->
       <div id="logo-container">
@@ -20,40 +20,67 @@
           src="./img/logo.png"
           alt="Album logo showing eye in triangle"
           id="header-img"
+          class="animation"
+        />
+        <img
+          src="./img/stage0.png"
+          alt="Album logo showing eye in triangle"
+          id="header-img-stage0"
+          class="animation"
+        />
+        <img
+          src="./img/stage1.png"
+          alt="Album logo showing eye in triangle"
+          id="header-img-stage1"
+          class="animation"
+        />
+        <img
+          src="./img/stage2.png"
+          alt="Album logo showing eye in triangle"
+          id="header-img-stage2"
+          class="animation"
+        />
+        <img
+          src="./img/stage3.png"
+          alt="Album logo showing eye in triangle"
+          id="header-img-stage3"
+          class="animation"
         />
       </div>
       <nav id="nav-bar">
         <ul>
-          <li><a href="#" class="nav-link">Sample</a></li>
+          <li><a href="#video-container" class="nav-link">Sample</a></li>
           <li><a href="#" class="nav-link">Features</a></li>
           <li><a href="#" class="nav-link">Pricing</a></li>
         </ul>
       </nav>
     </header>
-    <div id="content">
-      <section>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-          <input type="submit" value="Get Started" id="submit" />
-        </form>
-      </section>
-    </div>
+    <section id="video-container">
+      <div id="video-box">
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/6ppgVDssFNU"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- <div id="video-box-shadow"></div> -->
+    </section>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <input type="submit" value="Get Started" id="submit" />
+    </form>
+    <script src="/main.js"></script>
   </body>
 </html>
 
-<!-- yt link 
-  https://www.youtube.com/watch?v=6ppgVDssFNU
--->
-
 <!--tasks
 User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
-User Story #6: I can watch an embedded product video with id="video".
 User Story #14: My product landing page should have at least one media query.
 
 
@@ -63,6 +90,7 @@ User Story #2: I can see an image within the header element with a corresponding
 User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
 User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
 
+User Story #6: I can watch an embedded product video with id="video".
 User Story #7: My landing page has a form element with a corresponding id="form".
 User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
 User Story #9: The #email input field should have placeholder text to let the user know what the field is for.

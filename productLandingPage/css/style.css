@@ -42,22 +42,46 @@ li {
 header {
   position: fixed;
   top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   background-color: var(--blue);
   height: 5rem;
   width: 100%;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 #logo-container {
+  position: relative;
   height: 100%;
   width: 5rem;
 }
 
-#logo-container img {
+.animation {
   width: auto;
   height: auto;
   max-height: 100%;
+  position: absolute;
+}
+
+#header-img {
+  z-index: 5;
+}
+
+#header-img-stage0 {
+  z-index: 4;
+}
+
+#header-img-stage1 {
+  z-index: 3;
+}
+
+#header-img-stage2 {
+  z-index: 2;
+}
+
+#header-img-stage3 {
+  z-index: 1;
 }
 
 #nav-bar {
@@ -86,8 +110,40 @@ a:hover {
   border-bottom: black 3px solid;
 }
 
-#content {
+/* video */
+
+#video-container {
   margin-top: 5rem;
   background-color: var(--light-green);
   height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#video-box {
+  width: 50rem;
+  height: 35rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#video-box::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 22rem solid var(--dark-green);
+  border-right: 18rem solid transparent;
+  position: absolute;
+  left: 50rem;
+  top: 13rem;
+}
+
+#video {
+  height: 30rem;
+  width: 40rem;
+  border: none;
 }
