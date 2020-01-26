@@ -110,16 +110,27 @@ a:hover {
   border-bottom: black 3px solid;
 }
 
-/* video */
+/* video container */
 
 #video-container {
+  position: relative;
   margin-top: 5rem;
   background-color: var(--light-green);
   height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
 }
+
+/* fix for anchor with fixed position heading */
+
+#video-container-a {
+  position: absolute;
+  top: -5rem;
+}
+
+/* rest of video container css */
 
 #video-box {
   width: 50rem;
@@ -146,4 +157,12 @@ a:hover {
   height: 30rem;
   width: 40rem;
   border: none;
+}
+
+/* utility */
+
+.transition {
+  background-color: white;
+  width: 100vw;
+  height: 5rem;
 }
