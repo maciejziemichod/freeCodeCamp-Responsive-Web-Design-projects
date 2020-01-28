@@ -10,11 +10,14 @@
     />
     <title>Product landing page</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/819a786234.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
     <header id="header">
-      <!-- for codepen src: https://raw.githubusercontent.com/waterflowMZ/Product-Landing-Page/master/productLandingPage/img/logo.png -->
       <div id="logo-container">
         <img
           src="./img/logo.png"
@@ -52,13 +55,12 @@
           <li>
             <a href="#video-container-a" class="nav-link">Sample</a>
           </li>
-          <li><a href="#" class="nav-link">Features</a></li>
-          <li><a href="#" class="nav-link">Pricing</a></li>
+          <li><a href="#tracks-container-a" class="nav-link">Tracks</a></li>
+          <li><a href="#buy-container-a" class="nav-link">Buy</a></li>
         </ul>
       </nav>
     </header>
     <section id="video-container">
-      <!-- fix for anchor with fixed position heading  -->
       <span id="video-container-a"></span>
       <div id="video-box">
         <iframe
@@ -69,38 +71,58 @@
       </div>
     </section>
     <div class="transition"></div>
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter your email"
-        required
-      />
-      <input type="submit" value="Get Started" id="submit" />
-    </form>
+    <section id="tracks-container">
+      <span id="tracks-container-a"></span>
+      <div class="circle">01. "Nieboskłonem"</div>
+      <div class="circle">02. "Płyta Rodzaju"</div>
+      <div class="circle">03. "Niech się stanie"</div>
+      <div class="circle">04. "Siódma Noc"</div>
+      <div class="circle">05. "zJawa"</div>
+      <div class="circle">06. "Wieczne Pióro"</div>
+      <div class="circle">07. "Ala Tołstoj"</div>
+      <div class="circle">08. "List"</div>
+      <div class="circle">09. "Ala Tołstoj 2"</div>
+      <div class="circle">10. "Szarzyzna i Duch"</div>
+    </section>
+    <div class="transition"></div>
+    <section id="buy-container">
+      <span id="buy-container-a"></span>
+      <div class="sun">
+        <a
+          href="https://asfaltshop.pl/product/10715-meek-oh-why-plyta-rodzaju-cd/"
+          target="_blank"
+          ><span class="sun-link"></span>Click here to buy the album</a
+        >
+      </div>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+          class="e"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input class="s" type="submit" value="Stay tuned" id="submit" />
+      </form>
+    </section>
+    <div class="footer-container">
+      <footer>
+        <div class="icons-container">
+          <a href="https://www.freecodecamp.org/waterflow" target="_blank"
+            ><i class="fab fa-free-code-camp"></i
+          ></a>
+          <a href="https://github.com/waterflowMZ/" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://codepen.io/waterflowmz" target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
     <script src="/main.js"></script>
   </body>
 </html>
 
-<!--tasks
-User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
-User Story #14: My product landing page should have at least one media query.
-
-
-
-User Story #1: My product landing page should have a header element with a corresponding id="header".
-User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
-User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
-User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
-User Story #6: I can watch an embedded product video with id="video".
-User Story #7: My landing page has a form element with a corresponding id="form".
-User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
-User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
-User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
-User Story #11: Within the form, there is a submit input with a corresponding id="submit".
-User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL:
-https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.
-User Story #13: The navbar should always be at the top of the viewport.
-User Story #15: My product landing page should utilize CSS flexbox at least once.
--->
+<!-- z letters between containers, like in "szarzyzna i duch" -->
