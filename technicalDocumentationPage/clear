@@ -1,0 +1,23 @@
+[33mcommit 0100526d64b47dff0de7fc047c4fb76ae2142672[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Maciej Ziemichód <maciej.ziemichod@gmail.com>
+Date:   Tue Feb 4 13:49:01 2020 +0100
+
+    added bootstrap
+
+[33mcommit acf0366202abf99939a2484ae8e725def739df81[m
+Author: Maciej Ziemichód <maciej.ziemichod@gmail.com>
+Date:   Mon Feb 3 03:40:00 2020 +0100
+
+    added readme
+
+[33mcommit 43a8f2fab1709df1fdece3b34e38d86f334a4ca9[m
+Author: Maciej Ziemichód <maciej.ziemichod@gmail.com>
+Date:   Sat Feb 1 20:27:04 2020 +0100
+
+    added tasks
+
+[33mcommit eb7846ce1bd1579bd71fbe765495f793664aa84c[m
+Author: Maciej Ziemichód <maciej.ziemichod@gmail.com>
+Date:   Sat Feb 1 19:07:04 2020 +0100
+
+    initial project version
