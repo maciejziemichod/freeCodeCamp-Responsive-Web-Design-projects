@@ -1,3 +1,3 @@
 # Technical documentation page
 
-Built with bootstrap
+Built with pure HTML and CSS

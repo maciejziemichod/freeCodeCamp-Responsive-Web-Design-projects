@@ -1,0 +1,201 @@
+/* global settings */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.4;
+  overflow-x: hidden;
+  font-size: 18px;
+  background: #000;
+  color: #fff;
+}
+
+a {
+  color: #940000;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 70%;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 40px;
+}
+/* layout */
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* navbar */
+
+#navbar {
+  height: 100vh;
+}
+
+#navbar header {
+  color: #940000;
+  font-size: 36px;
+  font-weight: bold;
+  height: auto;
+}
+
+#navbar div {
+  width: 200px;
+  margin-left: 30px;
+  margin-top: 30px;
+  position: fixed;
+  height: 100%;
+}
+
+#navbar ul {
+  font-size: 25px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow-y: auto;
+}
+
+#navbar li {
+  list-style: none;
+}
+/* main */
+
+#main-doc {
+  margin: 30px 50px;
+  width: 90%;
+}
+
+#main-doc li {
+  margin-left: 40px;
+  margin-bottom: 6px;
+}
+
+#Introduction header {
+  border: none;
+}
+
+section header {
+  font-size: 36px;
+  border-top: #fff solid 1px;
+  padding-top: 50px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+#Images img {
+  width: auto;
+  margin: 30px 0 30px 30px;
+}
+
+code {
+  background-color: #292929;
+  display: block;
+
+  border-left: #490000 solid 5px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  margin: auto;
+}
+
+footer h1 {
+  margin-top: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer i {
+  color: #940000;
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+footer i:hover {
+  font-weight: bold;
+}
+
+/* media query */
+
+@media (max-width: 920px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr;
+  }
+
+  #navbar div {
+    position: relative;
+    width: auto;
+
+    margin: auto;
+  }
+
+  #main-doc {
+    margin: 30px 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  #navbar ul {
+    height: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  #navbar li {
+    height: auto;
+  }
+
+  #navbar header {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #navbar {
+    height: auto;
+  }
+}
